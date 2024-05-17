@@ -34,7 +34,8 @@ import java.util.List;
         }
 
         @PutMapping("/{id}")
-        public void updateItemS(@PathVariable Long id, @RequestBody Item item) {
+        //int x;
+        public void updateItem(@PathVariable Long id, @RequestBody Item item) {
             itemService.updateItem(id, item);
         }
 
