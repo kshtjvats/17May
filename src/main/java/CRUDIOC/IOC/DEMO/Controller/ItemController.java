@@ -11,6 +11,7 @@ import java.util.List;
     @RestController
     @RequestMapping("/items")
     public class ItemController {
+        long accountId;
         private final ItemService itemService;
 
         public ItemController(ItemService itemService) {
@@ -39,6 +40,6 @@ import java.util.List;
 
         @DeleteMapping("/{id}")
         public void deleteItem(@PathVariable Long id) {
-            itemService.deleteItem(id);
+            itemService.deleteItem(accountId);
         }
     }
