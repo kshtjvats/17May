@@ -40,6 +40,6 @@ import java.util.List;
 
         @DeleteMapping("/{id}")
         public void deleteItem(@PathVariable Long id) {
-            itemService.deleteItem(accountId);
+            itemService.deleteItem(x);
         }
     }
